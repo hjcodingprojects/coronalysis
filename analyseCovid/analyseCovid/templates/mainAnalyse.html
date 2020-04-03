@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+  <title>Covid-19 Data</title>
+
+
+</head>
+<body>
+<div id="data-covid" data-values="{{ data_countries }}"></div>
+<div id="data-range" data-values="{{ range_x }}"></div>
+   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <div id="myDiv"><script  src="{% static 'js/script.js' %}"></script></div>
+</body>
+</html>
